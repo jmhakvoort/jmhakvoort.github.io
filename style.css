@@ -47,6 +47,20 @@ main dl dd {
   padding: 0;
   background-color: slategray;
   color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+main dl dd a {
+  color: white;
+  text-align: center;
+  line-height: 1rem;
+  padding: 1rem;
+}
+
+main dl dd a:hover {
+  background-color: lightsteelblue;
+  color: dimgray;
 }
 
 footer {
