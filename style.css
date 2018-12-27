@@ -11,15 +11,16 @@ body {
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: 1fr 5rem;
+  grid-template-rows: 1fr auto;
   grid-template-areas:". content ." ". header .";
-  grid-gap: 0.25rem;
+  grid-gap: 1rem;
+  background: url('bg.png') bottom center;
 }
 
 /* Root body elements */
 header {
   grid-area: header;
-  background-color: slategray;
+  background-color: rgba(112, 128, 144, 0.8);
   color: white;
 }
 
@@ -29,6 +30,7 @@ main {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 /* Header element (H1) */
@@ -44,14 +46,17 @@ header h1 {
 /* "main" elements */
 main dl {
   padding: 0;
-  margin: 0;
-  width: 33%;
-  flex: 0 0 auto;
+  margin: 0 1rem;
+  flex: 1 0 100px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr auto;
   grid-template-areas: "description" "title";
-  grid-gap: 0.25rem;
+  grid-gap: 1rem;
+}
+
+main dl:first-of-type, main dl:last-of-type {
+  margin: 0;
 }
 
 main dl dt {
@@ -60,7 +65,7 @@ main dl dt {
   letter-spacing: 0.75rem;
   font-size: 2rem;
   line-height: 3rem;
-  background-color: slategray;
+  background-color: rgba(112, 128, 144, 0.8);
   color: white;
 }
 
@@ -74,14 +79,15 @@ main dl dd {
 
 /* Definition Description Anchor */
 main dl dd a {
-  background-color: slategray;
+  background-color: rgba(112, 128, 144, 0.8);
   color: white;
+  text-decoration: none;
   text-align: center;
   line-height: 1rem;
   padding: 1rem;
 }
 
 main dl dd a:hover {
-  background-color: lightsteelblue;
+  background-color: rgba(176, 196, 222, 0.8);
   color: dimgray;
 }
