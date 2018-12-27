@@ -1,3 +1,4 @@
+/* Core Setup */
 html, body {
   font-size: 16px;
 }
@@ -10,8 +11,16 @@ body {
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: 5rem 1fr 5rem;
-  grid-template-areas: ". . ." ". content ." ". footer .";
+  grid-template-rows: 1fr 5rem;
+  grid-template-areas:". content ." ". header .";
+  grid-gap: 0.25rem;
+}
+
+/* Root body elements */
+header {
+  grid-area: header;
+  background-color: slategray;
+  color: white;
 }
 
 main {
@@ -19,20 +28,34 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
+/* Header element (H1) */
+header h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1rem;
+  font-size: 4rem;
+  line-height: 5rem;
+}
+
+/* "main" elements */
 main dl {
-  flex: 1 1 auto;
+  padding: 0;
+  margin: 0;
+  width: 33%;
+  flex: 0 0 auto;
   display: grid;
-  margin: 0 0.5rem 1rem;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 3rem;
-  grid-template-areas: "list" "header";
+  grid-template-rows: 1fr auto;
+  grid-template-areas: "description" "title";
+  grid-gap: 0.25rem;
 }
 
 main dl dt {
-  grid-area: header;
+  grid-area: title;
   text-align: center;
   letter-spacing: 0.75rem;
   font-size: 2rem;
@@ -42,16 +65,16 @@ main dl dt {
 }
 
 main dl dd {
-  grid-area: list;
-  margin: 0 0 1rem;
+  grid-area: description;
+  margin: 0;
   padding: 0;
-  background-color: slategray;
-  color: white;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 
+/* Definition Description Anchor */
 main dl dd a {
+  background-color: slategray;
   color: white;
   text-align: center;
   line-height: 1rem;
@@ -61,20 +84,4 @@ main dl dd a {
 main dl dd a:hover {
   background-color: lightsteelblue;
   color: dimgray;
-}
-
-footer {
-  grid-area: footer;
-  margin: 0 0.5rem;
-  background-color: slategray;
-  color: white;
-}
-
-footer h1 {
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  letter-spacing: 1rem;
-  font-size: 4rem;
-  line-height: 5rem;
 }
