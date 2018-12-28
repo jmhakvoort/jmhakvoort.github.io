@@ -18,7 +18,7 @@ body {
   grid-template-rows: 1fr auto;
   grid-template-areas:". content ." ". header .";
   grid-gap: 1rem;
-  background: url('bg.png') bottom center;
+  background: url('../images/bg.png') bottom center;
 }
 
 /* Root body elements */
