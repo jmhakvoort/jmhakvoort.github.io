@@ -1,0 +1,79 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+html, body {
+  font-size: 16px;
+  font-family: 'Quicksand', monospace;
+}
+
+@media all {
+  /* Core Setup */
+  body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-gap: 1rem;
+    background-image: url('../images/bg.png');
+    background-position: bottom center;
+  }
+
+  /* Root body elements */
+  header {
+    grid-area: header;
+  }
+
+  main {
+    grid-area: content;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  /* Header element (H1) */
+  header h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* "main" elements */
+  main dl {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  main dl:first-of-type, main dl:last-of-type {
+    margin: 0;
+  }
+
+  main dl dt {
+    grid-area: title;
+    text-align: center;
+    letter-spacing: 0.75rem;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  main dl dd {
+    grid-area: description;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  /* Definition Description Anchor */
+  main dl dd a {
+    text-decoration: none;
+    text-align: center;
+    line-height: 1rem;
+    cursor: pointer !important;
+  }
+
+  main dl dd a:hover {
+    background-color: rgba(176, 196, 222, 0.8);
+    color: dimgray;
+  }
+}

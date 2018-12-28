@@ -1,0 +1,34 @@
+@media (orientation:portrait) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:"content" "header";
+  }
+
+  header h1 {
+    letter-spacing: 0.5rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  main {
+    overflow-y: auto;
+    align-content: flex-end;
+  }
+
+  main dl {
+    margin-top: 1rem;
+    flex: 0 0 auto;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "title" "description";
+  }
+
+  main dl dd {
+    flex-direction: column;
+  }
+
+  main dl dd a {
+    padding: 0.5rem 0;
+    width: 100%;
+  }
+}

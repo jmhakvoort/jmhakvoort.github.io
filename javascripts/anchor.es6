@@ -8,6 +8,7 @@ class Anchor {
     let anchor = document.createElement('a')
     let text = document.createTextNode(this.name)
     anchor.href = this.url
+    anchor.classList.add("translucent")
     anchor.appendChild(text)
     return anchor
   }

@@ -1,0 +1,44 @@
+@media (orientation:landscape) {
+  body {
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:". content ." ". header .";
+  }
+
+  header h1 {
+    letter-spacing: 1rem;
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+
+  main {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  main dl {
+    margin: 0 1rem;
+    flex: 1 0 100px;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "description" "title";
+    grid-gap: 1rem;
+  }
+
+  main dl:first-of-type dd a:last-of-type {
+    border-top-left-radius: 1rem;
+  }
+
+  main dl:last-of-type dd a:last-of-type {
+    border-top-right-radius: 1rem;
+  }
+
+  main dl dd {
+    flex-direction: column-reverse;
+  }
+
+  main dl dd a {
+    padding: 1rem;
+  }
+}

@@ -15,6 +15,7 @@ class Section {
     let title = document.createElement('dt')
     let text = document.createTextNode(this.name)
     title.appendChild( text )
+    title.classList.add("translucent")
     this.list.appendChild( description )
     this.list.appendChild( title )
     return this.list
