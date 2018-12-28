@@ -1,15 +1,15 @@
 const DATA = {
   "/world" : {
-    "The Old Reader" : "https://theoldreader.com/posts/all",
-    "jmhakvoort@outlook.com" : "https://outlook.live.com/mail/",
-    "zyberteq@gmail.com" : "https://mail.google.com",
+    "RSS Reader" : "https://theoldreader.com/posts/all",
+    "Outlook" : "https://outlook.live.com/mail/",
+    "GMail" : "https://mail.google.com",
     "MSN Nieuws" : "https://www.msn.com/nl-nl/nieuws"
   },
   "/work" : {
     "PEP Flex" : "https://pepme.net",
-    "GitHub: PEP Flex" : "https://github.com/nedap/pep-flex",
-    "GitHub: PEP Core" : "https://github.com/nedap/pep-core",
-    "GitHub: PEP Flex (Merb)" : "https://github.com/nedap/pep-flex-merb"
+    "GH: PEP Flex" : "https://github.com/nedap/pep-flex",
+    "GH: PEP Core" : "https://github.com/nedap/pep-core",
+    "GH: PEP Flex (Merb)" : "https://github.com/nedap/pep-flex-merb"
   },
   "/me" : {
     "YouTube" : "https://youtube.com",
