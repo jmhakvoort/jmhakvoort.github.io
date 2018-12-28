@@ -14,6 +14,7 @@ const DATA = {
   "/me" : {
     "YouTube" : "https://youtube.com",
     "Reddit"  : "https://www.reddit.com",
-    "KinePolis" : "https://kinepolis.nl/"
+    "KinePolis" : "https://kinepolis.nl/",
+    "4chan" : "https://www.4chan.org/frames"
   }
 }
