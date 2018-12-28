@@ -1,6 +1,10 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
 /* Core Setup */
 html, body {
   font-size: 16px;
+  font-family: 'Quicksand', monospace;
 }
 
 body {
