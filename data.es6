@@ -1,5 +1,5 @@
 const DATA = {
-  "/daily" : {
+  "/world" : {
     "The Old Reader" : "https://theoldreader.com/posts/all",
     "jmhakvoort@outlook.com" : "https://outlook.live.com/mail/",
     "zyberteq@gmail.com" : "https://mail.google.com",
@@ -11,7 +11,7 @@ const DATA = {
     "GitHub: PEP Core" : "https://github.com/nedap/pep-core",
     "GitHub: PEP Flex (Merb)" : "https://github.com/nedap/pep-flex-merb"
   },
-  "/relax" : {
+  "/me" : {
     "YouTube" : "https://youtube.com",
     "Reddit"  : "https://www.reddit.com",
     "KinePolis" : "https://kinepolis.nl/"
