@@ -16,8 +16,6 @@ html, body {
     width: 100vw;
     display: grid;
     grid-gap: 1rem;
-    background-image: url('../images/bg.png');
-    background-position: bottom center;
   }
 
   /* Root body elements */

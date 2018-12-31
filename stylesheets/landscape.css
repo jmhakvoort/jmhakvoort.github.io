@@ -3,6 +3,8 @@
     grid-template-columns: 1fr 5fr 1fr;
     grid-template-rows: 1fr auto;
     grid-template-areas:". content ." ". header .";
+    background-image: url('../images/bg-landscape.jpg');
+    background-position: bottom center;
   }
 
   header h1 {
