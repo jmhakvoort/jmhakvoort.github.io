@@ -15,6 +15,7 @@ const DATA = {
     "YouTube" : "https://youtube.com",
     "Reddit"  : "https://www.reddit.com",
     "KinePolis" : "https://kinepolis.nl/",
-    "4chan" : "https://www.4chan.org/frames"
+    "4chan" : "https://www.4chan.org/frames",
+    "AutoScout24" : "https://www.autoscout24.nl/"
   }
 }
